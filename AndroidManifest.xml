@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.MyStore" android:versionCode="1" android:versionName="1.0">
+	<uses-sdk android:minSdkVersion="10" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION"/>
+ 	<uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+ 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+ 	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.CALL_PRIVILEGED" />
+	
+	
+
+ 	
+ 	
+	
+
+	<application android:icon="@drawable/home" android:label="@string/app_name" 
+		android:debuggable="true" android:theme="@style/mytheme">
+	<uses-library android:name="com.google.android.maps" />
+		<activity android:name=".MyStoreActivity" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+
+		<activity android:name=".UserStoreAct" />
+		<activity android:name=".MembershipAct" android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity android:name=".MapTabView" android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity android:name=".AddProductAct" android:windowSoftInputMode="stateAlwaysHidden"/>
+		<activity android:name=".CameraCropActivity"/>
+		
+		<activity android:name=".BalloonItemizedOverlay"></activity>
+		<activity android:name=".BalloonOverlayView"></activity>
+		<activity android:name=".MyItemizedOverlay"></activity>
+		
+		<activity android:name=".EditProductAct" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+		
+		
+		<activity android:name=".FriendsTabView"></activity>
+		<activity android:name=".ProductsTabView"></activity>
+		<activity android:name=".SettingTabView"></activity>
+		<activity android:name=".SettingMyProfileAct" android:windowSoftInputMode="stateAlwaysHidden"></activity>
+		<activity android:name=".SettingMyStoreAct"></activity>
+		
+		<activity android:name=".OtherStoreAct"></activity>
+		<activity android:name=".OtherUserProfileTabView"></activity>
+		<activity android:name=".OtherUserProductTabView"></activity>
+		<activity android:name=".ChattingTabView"></activity>
+		<activity android:name=".ViewOtherProductAct"></activity>
+		
+		<activity android:name="SplashAct"/>
+	
+		<activity android:name=".FriendBroadcastReceiver"></activity>
+		
+		<activity android:name=".TestTabView"></activity>
+		<activity android:name=".TabNaviComplaintBase"></activity>	
+		
+	</application>
+</manifest>
