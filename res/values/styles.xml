@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<style name="mytheme">
+		<item name="android:windowNoTitle">true</item>
+		<item name="android:windowBackground">@drawable/woodbackground</item>
+		<item name="android:textColor">#ffd700</item>
+		<item name="android:textStyle">italic</item>
+	</style>
+
+</resources>

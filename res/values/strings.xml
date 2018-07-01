@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">MyStore</string>
+    <string name="app_name">MyStore</string>
+    
+    <string name="join_membership">회원가입</string>
+ 	<string name="log_in">로그인</string>
+ 	
+ 	<string name="title_membership">회원가입</string>
+ 	
+	    
+</resources>

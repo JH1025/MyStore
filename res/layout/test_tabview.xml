@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<RelativeLayout android:orientation="vertical"
+		android:layout_width="fill_parent" android:layout_height="350dip">
+
+		<LinearLayout android:id="@+id/testview"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"></LinearLayout>
+	</RelativeLayout>
+
+
+	<com.MyStore.TabNaviComplaintBase
+		android:layout_height="30dip" android:layout_width="fill_parent"
+		android:layout_weight="1" android:id="@+id/PageNavigationView"
+		android:layout_gravity="bottom">
+	</com.MyStore.TabNaviComplaintBase>
+
+</LinearLayout>

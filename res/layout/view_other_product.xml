@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="상품 " />
+
+
+	<ImageView android:id="@+id/other_product_image"
+		android:layout_width="120dp" android:layout_height="120dp"
+		android:layout_gravity="center" android:layout_margin="20dp" />
+
+	
+
+
+			<LinearLayout android:orientation="vertical"
+				android:layout_marginTop="20dip"
+				android:layout_marginLeft="20dip" android:layout_marginRight="20dip"
+				android:layout_height="fill_parent" android:layout_width="fill_parent">
+
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="상품명  : "
+					android:textStyle="bold" android:textSize="20dip"
+					android:layout_marginTop="10dip" android:id="@+id/other_product_title" />
+
+
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="사용기간  : "
+					android:textStyle="bold" android:textSize="20dip"
+					android:layout_marginTop="10dip" android:id="@+id/other_product_period" />
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="희망가격  : "
+					android:textStyle="bold" android:textSize="20dip"
+					android:layout_marginTop="10dip" android:id="@+id/other_product_price" />
+
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="설명  : "
+					android:textStyle="bold" android:textSize="20dip"
+					android:layout_marginTop="10dip" android:id="@+id/other_product_explain" />
+
+
+
+			</LinearLayout>
+
+
+
+</LinearLayout>
+		

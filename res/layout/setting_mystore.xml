@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/maptablayout" android:orientation="vertical"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+	<TextView android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:text="가게 설정"
+		android:textSize="25px" />
+	<LinearLayout android:layout_height="300dip"
+		android:layout_width="fill_parent" android:layout_marginTop="3dip">
+
+
+		<com.google.android.maps.MapView
+			android:id="@+id/set_location_map" android:layout_width="fill_parent"
+			android:layout_height="fill_parent" android:enabled="true"
+			android:clickable="true" android:apiKey="0F5oLuCsChHD_RmhyIawUhlhaj3Q-6do7xwHBRQ" />
+	</LinearLayout>
+
+	<LinearLayout android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:orientation="horizontal"
+		android:layout_marginTop="20dip">
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_gravity="left" android:layout_width="wrap_content"
+			android:orientation="vertical" android:layout_marginLeft="5dip"
+			android:layout_marginRight="10dip">
+
+			<CheckBox android:text="open store" android:id="@+id/openStoreCheckBox"
+				android:textColor="#ffd700" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_marginTop="5dip">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="위도 : " />
+				<TextView android:id="@+id/latitudeTextView"
+					android:layout_width="fill_parent" android:layout_height="wrap_content" />
+			</LinearLayout>
+
+			<LinearLayout android:layout_height="wrap_content"
+				android:orientation="horizontal" android:layout_width="fill_parent"
+				android:layout_marginTop="3dip">
+				<TextView android:layout_width="wrap_content"
+					android:layout_height="wrap_content" android:text="경도 : " />
+				<TextView android:id="@+id/longitudeTextView"
+					android:layout_width="wrap_content" android:layout_height="wrap_content" />
+			</LinearLayout>
+
+
+
+		</LinearLayout>
+
+		<LinearLayout android:layout_height="wrap_content"
+			android:layout_gravity="right" android:layout_width="fill_parent"
+			android:orientation="vertical" android:layout_marginLeft="10dip"
+			android:layout_marginRight="20dip">
+
+			<Button android:id="@+id/sendLocationButton" android:layout_marginTop="3dip"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:text="위치 전송" />
+
+			<Button android:id="@+id/getNowLocationButton" android:layout_marginTop="3dip"
+				android:layout_height="wrap_content" android:layout_width="fill_parent"
+				android:text="현재위치" />
+		</LinearLayout>
+	</LinearLayout>
+
+</LinearLayout>

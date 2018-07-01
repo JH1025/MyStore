@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+	<RelativeLayout android:id="@+id/other_profile_relativeLayout"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<ScrollView android:layout_height="fill_parent"
+			android:layout_width="fill_parent">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="wrap_content" android:orientation="vertical">
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="horizontal"
+					android:layout_marginTop="40dip">
+					<ImageView android:id="@+id/other_profile_image"
+						android:layout_width="100dp" android:layout_height="130dp"
+						android:layout_gravity="fill_vertical" android:layout_margin="15dp"
+						android:src="@drawable/icon" />
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="vertical"
+						android:layout_marginTop="5dip">
+						<TextView android:id="@+id/other_profile_phoneNumber_textView"
+							android:layout_width="wrap_content" android:textSize="20dip"
+							android:layout_height="wrap_content" android:text="폰번호 :  "
+							android:layout_marginTop="10dip" android:textStyle="bold" />
+						<TextView android:id="@+id/other_profile_ID_textView"
+							android:layout_width="wrap_content" android:textSize="20dip"
+							android:layout_height="wrap_content" android:text="ID :  "
+							android:layout_marginTop="20dip" android:textStyle="bold" />
+					</LinearLayout>
+
+
+				</LinearLayout>
+
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:layout_marginTop="17dip" android:layout_marginLeft="20dip"
+					android:layout_marginRight="20dip">
+
+
+					<TextView android:id="@+id/other_profile_name_textView"
+						android:layout_width="wrap_content" android:textSize="20dip"
+						android:layout_height="wrap_content" android:text="이름 :  "
+						android:textStyle="bold" />
+
+
+
+					<TextView android:id="@+id/other_profile_address_textView"
+						android:layout_marginTop="15dip" android:layout_width="wrap_content"
+						android:textSize="20dip" android:layout_height="wrap_content"
+						android:text="주소:  " android:textStyle="bold" />
+
+
+				</LinearLayout>
+
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:layout_marginTop="20dip">
+
+					<Button android:id="@+id/other_call_button" android:layout_width="100dip"
+						android:layout_height="wrap_content" android:text="전화걸기" />
+
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</RelativeLayout>
+
+</LinearLayout>

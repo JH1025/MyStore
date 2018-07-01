@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+
+	<RelativeLayout android:id="@+id/profile_relativeLayout"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<ScrollView android:layout_height="fill_parent"
+			android:layout_width="fill_parent">
+
+			<LinearLayout android:layout_width="fill_parent"
+				android:layout_height="fill_parent" android:orientation="vertical">
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="horizontal"
+					android:layout_marginTop="40dip">
+					<ImageView android:id="@+id/profile_image"
+						android:layout_width="100dp" android:layout_height="100dp"
+						android:layout_gravity="fill_vertical" android:layout_margin="20dp" />
+					<LinearLayout android:layout_width="fill_parent"
+						android:layout_height="wrap_content" android:orientation="vertical"
+						android:layout_marginTop="10dip">
+						<TextView android:id="@+id/profile_phoneNumber_textView"
+							android:layout_width="wrap_content" android:textSize="15dip"
+							android:layout_height="wrap_content" android:text="폰번호 :  "
+							android:layout_marginTop="10dip" />
+						<TextView android:id="@+id/profile_ID_textView"
+							android:layout_width="wrap_content" android:textSize="15dip"
+							android:layout_height="wrap_content" android:text="ID :  "
+							android:layout_marginTop="20dip" />
+					</LinearLayout>
+
+
+				</LinearLayout>
+
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:orientation="vertical"
+					android:layout_marginTop="25dip">
+
+
+					<TextView android:layout_width="wrap_content"
+						android:textSize="15dip" android:layout_height="wrap_content"
+						android:text="이름 :  " />
+
+					<EditText android:id="@+id/profile_name_textbox"
+						android:layout_width="fill_parent" android:layout_height="wrap_content"
+						android:singleLine="true" />
+
+					<TextView android:layout_width="wrap_content"
+						android:textSize="15dip" android:layout_height="wrap_content"
+						android:text="주소:  " />
+
+					<EditText android:id="@+id/profile_address_textbox"
+						android:layout_width="fill_parent" android:layout_height="wrap_content" />
+
+				</LinearLayout>
+
+
+				<LinearLayout android:layout_width="fill_parent"
+					android:layout_height="wrap_content" android:gravity="center"
+					android:layout_marginTop="20dip">
+
+					<Button android:id="@+id/profile_modify_button"
+						android:layout_width="100dip" android:layout_height="wrap_content"
+						android:text="수정" />
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+		</ScrollView>
+	</RelativeLayout>
+
+</LinearLayout>
